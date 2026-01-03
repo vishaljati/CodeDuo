@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      "/api":"https://api-codeduo.vercel.app"
+      "/api": "https://codeduo-chh5.onrender.com"
     },
   },
 })
