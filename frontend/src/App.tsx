@@ -19,6 +19,7 @@ function App() {
         </SignedIn>
 
       </header>
+      <h1 className="text-5xl bg-blue-600 text-white">Hello Coders!!</h1>
     </>
   )
 }
