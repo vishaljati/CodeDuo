@@ -3,7 +3,7 @@ export interface ApiErrorOptions {
     message?: string;
     errors?: unknown[];
 }
-
+// NOTE : IMPROVE CODE (receive 2 argument)
 
 class ApiError extends Error {
     public readonly statusCode: number;
