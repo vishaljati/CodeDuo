@@ -1,18 +1,17 @@
-export class ApiResponse<T = unknown> {
-    public readonly success: boolean;
-    public readonly statuscode: number;
-    public readonly message: string;
-    public readonly data?: T;
+import type { ApiResponseType } from "../types/apires.types.js";
 
-    constructor(options: {
-        statuscode: number;
-        message: string;
-        data?: T;
-    })
-    {
-        this.statuscode = options.statuscode;
-        this.message = options.message;
-        this.data = options.data;
-        this.success = options.statuscode < 400;
+class ApiResponse<T> implements ApiResponseType {
+    constructor(
+        public statusCode: number,
+        public message: string,
+        public data?: T,
+        public success = true
+    ) {
+        this.statusCode = statusCode
+        this.data = data
+        this.message = message
+        this.success = statusCode < 400
     }
 }
+
+export { ApiResponse }
