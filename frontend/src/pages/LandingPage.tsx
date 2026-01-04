@@ -99,8 +99,9 @@ const LandingPage: React.FC = () => {
       {/* Footer */}
       <footer className="border-t border-slate-900 py-12">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-sm">
-          <p>© 2024 CodeDuo. All rights reserved.</p>
+          <p>© 2026 CodeDuo. All rights reserved.</p>
           <div className="flex gap-6">
+            <p>Made by Vishal Jati</p>
             <Github size={20} className="hover:text-white cursor-pointer transition-colors" />
             <Twitter size={20} className="hover:text-white cursor-pointer transition-colors" />
             <Mail size={20} className="hover:text-white cursor-pointer transition-colors" />
